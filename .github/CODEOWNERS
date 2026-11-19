@@ -1,8 +1,7 @@
-# Automatic code review disabled at repository owner's request, 2026-11-20.
 # Global code owner
-# * @mnriem
+* @mnriem
 
 # Community catalog files — explicit ownership for when global ownership expands
-# /extensions/catalog.community.json @mnriem
-# /integrations/catalog.community.json @mnriem
-# /presets/catalog.community.json @mnriem
+/extensions/catalog.community.json @mnriem
+/integrations/catalog.community.json @mnriem
+/presets/catalog.community.json @mnriem

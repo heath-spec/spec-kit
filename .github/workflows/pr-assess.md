@@ -1,9 +1,11 @@
 ---
 description: "Compare a PR description with its code changes and report material omissions or contradictions"
 
-# Automatic code review disabled at repository owner's request, 2026-11-20.
 on:
-  workflow_dispatch:
+  issues:
+    types: [labeled]
+  pull_request_target:
+    types: [labeled]
   skip-bots: [github-actions, copilot, dependabot]
 
 if: github.event.label.name == 'pr-assess'
