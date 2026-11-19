@@ -51,13 +51,9 @@
 #   - ghcr.io/github/github-mcp-server:v1.12.2@sha256:508a0857ec762b1ab1cece29193345b501fab1dd9d1228a7b617062954cecac6
 
 name: "Assess PR Description Alignment"
+# Automatic code review disabled at repository owner's request, 2026-11-20.
 on:
-  issues:
-    types:
-      - labeled
-  pull_request_target:
-    types:
-      - labeled
+  workflow_dispatch:
 # skip-bots: # Skip-bots processed as bot check in pre-activation job
 # - github-actions # Skip-bots processed as bot check in pre-activation job
 # - copilot # Skip-bots processed as bot check in pre-activation job
